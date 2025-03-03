@@ -1,6 +1,41 @@
-body {
+body,
+head{
     font-family: Arial, sans-serif;
     background-color: rgb(255, 89, 175);
   
   }
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    font-family: Arial, sans-serif;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: pink;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display:block;
+    padding: 8px;
+  } 
+
+  li a:hover {
+    background-color: rgb(255, 33, 148);
+  } 
+  
+  /* Active Color */
+   .active {
+    background-color: green;
+  } 
 
