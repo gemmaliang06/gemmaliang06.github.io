@@ -1,0 +1,43 @@
+script {
+    display: none;
+}
+
+html {
+    display: block;
+}
+
+head {
+    background-color: rgb(238, 245, 251);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+--scrollbar-width: 0px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 10px;
+text-decoration: none;
+font-weight: 400;
+font-family: 'SpaceGrotesk-VariableFont_wght.ttf', sans-serif;
+background-color: rgb(238, 245, 251);
+}
+
+.header {
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    min-width: 0;
+    text-align: start;
+    
+}
+
+.navbar {
+    display: flex;
+    padding: 1em;
+    margin-left: 2em;
+    margin-right: 3em;
+    
+    list-style-type: none;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}

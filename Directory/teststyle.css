@@ -1,0 +1,23 @@
+header#SITE_HEADER {
+    display: block; /* The header is displayed as a block-level element. */
+    position: sticky; /* The header is positioned based on the user's scroll position. */
+    top: 50px; /* The header sticks to the top of the viewport at 50px from the top. */
+    left: 0px; /* The header is aligned to the left edge of its containing block. */
+    width: 980px; /* The header's width is set to 980 pixels. */
+    height: 85px; /* The header's height is set to 85 pixels. */
+    background-color: rgba(0, 0, 0, 0); /* The header has a transparent background. */
+    color: rgb(0, 0, 0); /* The text color within the header is black. */
+    z-index: 50; /* The header is placed above other elements with a lower z-index. */
+    opacity: 1; /* The header is fully opaque. */
+    box-shadow: none; /* The header has no box shadow. */
+    border: 0px none rgb(0, 0, 0); /* The header has no border. */
+    padding: 0px; /* The header has no padding. */
+    margin: 0px; /* The header has no margin. */
+    font-family: Arial, Helvetica, sans-serif; /* The font family used in the header. */
+    font-size: 10px; /* The font size used in the header is 10 pixels. */
+    font-weight: 400; /* The font weight is normal. */
+    text-align: start; /* The text is aligned to the start (left in left-to-right languages). */
+    overflow: visible; /* Content that overflows the header's boundaries is visible. */
+    visibility: visible; /* The header is visible. */
+    clip-path: none; /* No clipping path is applied to the header. */
+  }
