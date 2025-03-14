@@ -15,47 +15,52 @@ head {
 body {
 --scrollbar-width: 0px;
 font-family: "space grotesk", Helvetica, sans-serif;
-font-size: 10px;
+font-size: 20px;
 text-decoration: none;
 font-weight: 400;
-background-color: rgb(238, 245, 251);
+background-color: rgb(233, 245, 255);
 color:blue
 }
 
-.header {
-    left: 0;
-    margin-left: 0;
+h1 {
+    background-color: blue;
     width: 100%;
-    min-width: 0;
-    text-align: start;
-    
+    color: white;
+    padding: 0.3em;
+    text-decoration: none;
+    text-align: left;
+    font-size: 30px;
 }
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+.side {
+    flex: 10%;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .main {
+    flex: 90%;
+    padding: 10px;
+  }
 
 .navbar {
     display: flex;
+    flex-direction: column;
     padding: 1em;
     margin-left: 2em;
     margin-right: 3em;
-    
-    list-style-type: none;
-    flex-flow: row wrap;
-    justify-content: space-around;
 }
 
-.navbar h1 {
-    color: blue;
-    padding: 0.3em;
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
-}
 
 .navbar h2 {
     color: blue;
-    padding: 0.7em;
     text-decoration: none;
-    text-align: center;
     font-size: 10;
+    flex-direction: row;
 }
 
 .navbar a:hover {
@@ -66,29 +71,37 @@ color:blue
     color: blue;
     padding: 1em;
     text-decoration: none;
-    text-align: center;
 }
 
-.projects {
+.navbar .Projects-container h3 {
+    display: none; 
+}
+
+.navbar .Projects-container:hover h3 {
+    display: block;
+    margin-left: 2em;
+}
+
+.gallery {
     flex-direction: column;
     margin-left: 2em;
     text-align: left;
     line-height: 1.2em;
 }
 
-.projects h1 {
+.gallery h1 {
     color: blue;
     padding: 0em;
     font-size: 25px;
 }
 
-.projects h2 {
+.gallery h2 {
     color: blue;
     font-size: 10;
 }
 
 .artwork {
-    width: 260px;
+    width: 30em;
     margin: 20px;
     display: inline-block;
     position: relative;
