@@ -207,7 +207,7 @@ h1 {
 }
 
 .carousel__slide {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 0;
   bottom: 0;
@@ -215,9 +215,9 @@ h1 {
   height: 100%;
 }
 
-.carousel__slide:first-child {
+/* .carousel__slide:first-child {
   display: block;
-}
+} */
 
 .carousel__button {
   position: absolute;
@@ -268,13 +268,14 @@ h1 {
   display: none;
 }
 
-.panels {
+/* .panels {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  object-fit:cover;
   gap: 1vw;
   margin: 2vw;
-}
+} */
 
 @font-face {
     font-family: 'space grotesk';
