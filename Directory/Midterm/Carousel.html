@@ -7,47 +7,51 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <h1>G. Liang</h1>
         <div class="carousel">
-            <button class="carousel__button">
-                <img src="img/left.svg" alt="" />
+            <button class="carousel__button carousel__button--left">
+                <img src="svg/left.svg" alt="" />
             </button>
+
             <div class="carousel__track-container">
                 <ul class="carousel__track">
                     <li class="carousel__slide">
-                    <img src="img/love at first sight.jpeg" alt="first artwork" />
+                    <img class="carousel_image" src="img/love at first sight.jpeg" alt="first artwork" />
                     </li>
 
                     <li class="carousel__slide">
                         <div class="panels">
-                    <img src="img/Listen to Her Buzz_ panel one.jpeg" alt="second artwork" />
-                    <img src="img/Listen to Her Buzz_ panel two.jpeg" alt="second artwork" />
+                    <img class="carousel_image" src="img/Listen to Her Buzz_ panel one.jpeg" alt="second artwork" />
+                    <img class="carousel_image" src="img/Listen to Her Buzz_ panel two.jpeg" alt="second artwork" />
                         </div>
                     </li>
 
                     <li class="carousel__slide">
-                    <img src="img/BREATH.jpeg" alt="third artwork" />
+                    <img class="carousel_image" src="img/BREATH.jpeg" alt="third artwork" />
                     </li>
 
                     <li class="carousel__slide">
-                    <img src="img/Inner Voice.jpeg" alt="fourth artwork" />
+                    <img class="carousel_image" src="img/Inner Voice.jpeg" alt="fourth artwork" />
                     </li>
 
                     <li class="carousel__slide">
-                    <img src="img/SPEAK!.jpeg" alt="fifth artwork" />
+                    <img class="carousel_image" src="img/SPEAK!.jpeg" alt="fifth artwork" />
                     </li>
-
                 </ul>
             </div>
-            <button class="carousel__button">
-                <img src="img/right.svg" alt="" />
+            <button class="carousel__button carousel__button--right">
+                <img src="svg/right.svg" alt="" />
             </button>
 
             <div class="carousel__nav">
+                <button class="carousel__indicator current-slide"></button>
+                <button class="carousel__indicator"></button>
                 <button class="carousel__indicator"></button>
                 <button class="carousel__indicator"></button>
                 <button class="carousel__indicator"></button>
             </div>
            
         </div>
+        <script src="Carousel.js"></script>
     </body>
 </html>
