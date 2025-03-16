@@ -135,14 +135,14 @@ h1 {
     position: relative;
   }
   
-  .artwork img {
+  .artwork img{
     width: 30vw;
-    height: auto;
+    height: 100%;
   }
 
 
 .title {
-  width: 100%;
+  width: 30vw;
   height: 100%;
   position: absolute;
   top: 0;
@@ -153,7 +153,8 @@ h1 {
   align-items: center;
   flex-direction: column;
   opacity: 0;
-  transition: 0.6s;
+  transition: 0.7s;
+  overflow: hidden;
 }
 
 .title:hover {
@@ -163,7 +164,7 @@ h1 {
 
 .title p {
   font-size: 2.5vw;
-  color: blue;
+  color: white;
   margin-bottom: 10px;
 }
 
@@ -254,8 +255,8 @@ h1 {
   background: rgba(0, 0, 0, 0.3);
   border: 0;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   cursor: pointer;
   margin: 0 12px;
 }
@@ -268,6 +269,7 @@ h1 {
   display: none;
 }
 
+/* this can be used when the second panel of "Listen to Her Buzz" is added */
 /* .panels {
   display: flex;
   flex-direction: row;
