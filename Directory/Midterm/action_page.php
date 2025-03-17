@@ -1,3 +1,8 @@
+<html>
+<head>
+    <title>Form Submission</title>
+</head>
+
 <?php
 // filepath: /Users/gemmaliang/Desktop/Web_Development/gemmaliang06.github.io/Directory/Midterm/action_page.php
 
@@ -8,8 +13,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email']);
     $subject = htmlspecialchars($_POST['subject']);
 
-    // Your email address
-    $to = "gtl2024@nyu.edu"; // Replace with your actual email address
+    
+    $to = "gtl2024@nyu.edu"; 
     $subjectLine = "New Contact Form Submission from $firstName $lastName";
 
     // Email content
@@ -44,3 +49,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Invalid request method.";
 }
 ?>
+
+</html>

@@ -23,7 +23,6 @@ html, body {
   font-family: "space grotesk", Helvetica, sans-serif;
   text-decoration: none;
   background-color: rgb(233, 245, 255);
-  color:blue
   }
   
   body {
@@ -33,9 +32,11 @@ html, body {
     width: 100%;
   }
 
+
 .row {
     display: flex;
     flex-wrap: nowrap;
+    color:blue;
 
   }
 
@@ -130,6 +131,10 @@ h1 {
   text-align: left;
   font-size: 8vw;
   margin: 0;
+}
+
+h1:hover {
+  cursor: pointer;
 }
 
 .navbar h2 {
