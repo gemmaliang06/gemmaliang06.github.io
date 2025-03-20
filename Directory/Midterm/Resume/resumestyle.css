@@ -1,0 +1,25 @@
+.resume {
+    flex: 90%;
+    padding: 1vw;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .res1-container {
+    flex: 10%;
+    padding: 1vw;
+  }
+
+  .res2-container {
+    flex: 20%;
+    padding: 1vw;
+  }
+
+  .res3-container {
+    flex: 20%;
+    padding: 1vw;
+  }
+
+.res2-container ul{
+  margin-left: 1.2vw;
+}

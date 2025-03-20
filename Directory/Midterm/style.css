@@ -30,10 +30,72 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
+    color: blue;
   }
 
+h1 {
+  background-color: blue;
+  width: 100%;
+  color: white;
+  padding: 2px;
+  text-decoration: none;
+  text-align: left;
+  font-size: 50px;
+  margin: 0;
+}
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 170px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 80px;
+  
+}
 
-.row {
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 2.5vw;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: rgb(255, 195, 42);
+  transform: scale(1.2); 
+  border: 0.5vw solid rgb(233, 245, 255, 0); 
+  background-color: rgb(233, 245, 255, 0); 
+}
+
+.sidenav .Projects-container h3 {
+  display: none; 
+}
+
+.sidenav .Projects-container:hover h3 {
+  display: block;
+  margin-left: 2vw;
+  cursor: pointer;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/* .row {
     display: flex;
     flex-wrap: nowrap;
     color:blue;
@@ -51,31 +113,7 @@ html, body {
     padding: 1vw;
   }
 
-  .resume {
-    flex: 90%;
-    padding: 1vw;
-    display: flex;
-    flex-wrap: nowrap;
-  }
-
-  .res1-container {
-    flex: 10%;
-    padding: 1vw;
-  }
-
-  .res2-container {
-    flex: 20%;
-    padding: 1vw;
-  }
-
-  .res3-container {
-    flex: 20%;
-    padding: 1vw;
-  }
-
-.res2-container ul{
-  margin-left: 1.2vw;
-}
+ 
 
 .navbar {
     display: flex;
@@ -83,18 +121,9 @@ html, body {
     padding: 1vw;
     margin-left: 2vw;
     margin-right: 3vw;
-}
+} */
 
-h1 {
-  background-color: blue;
-  width: 100%;
-  color: white;
-  padding: 0.5vw 0;
-  text-decoration: none;
-  text-align: left;
-  font-size: 8vw;
-  margin: 0;
-}
+
 
 .welcome {
   margin-top: 1.5vw;
@@ -114,22 +143,6 @@ h1 {
   font-size: 2vw;
 }
 
-
-.navbar h2 {
-    color: blue;
-    text-decoration: none;
-    flex-direction: row;
-    font-size: 1.5vw;
-}
-
-.navbar a {
-  color: blue;
-  padding: 0.5vw;
-  text-decoration: none;
-  transition: transform 0.3s ease, color 0.3s ease; 
-  display: inline-block; 
-}
-
 .navbar a:hover {
   color: rgb(255, 195, 42);
   transform: scale(1.5); 
@@ -137,152 +150,16 @@ h1 {
   background-color: rgb(233, 245, 255, 0); 
 }
 
-.navbar .Projects-container h3 {
-    display: none; 
-    font-size: 1.5vw; 
-}
-
-.navbar .Projects-container:hover h3 {
-    display: block;
-    margin-left: 2vw;
-    cursor: pointer;
-}
 
 
 
 
-  .pencil {
-    width: 20vw;
-    margin-right: 2vw;
-    margin-bottom: 2vw;
-    margin-top: 2vw;
-    display: inline-block;
-    position: relative;
-  }
 
-  .project_section {
-    display: flex;
-    justify-content: column;
-    align-items: flex-start;
-    
-  }
-
-  .project_section_artworks {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .project_section img{
-    /* width: 30vw;
-    height: 100%; */
-  }
-
-  .project_section_container {
-    justify-content: row;
-    align-content: space-between;
-  }
-
-  .description {
-    flex: 2;
-    padding: 1vw;
-    max-width: 60%;
-    font-size: 25px;
-  }
-
-
-
-
-.carousel {
-  position: relative;
-  height: 900px;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.carousel__image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.carousel__track-container {
-  background-color: rgb(238, 245, 251);
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.carousel__track {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  position: relative;
-  height: 100%;
-  transition: transform 250ms ease-in;
-}
-
-.carousel__slide {
-  /* display: none; */
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* .carousel__slide:first-child {
-  display: block;
-} */
-
-.carousel__button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: transparent;
-  cursor: pointer;
-  border: 0;
-}
-
-.carousel__button--left {
-  left: -50px;
-}
-
-.carousel__button--right {
-  right: -50px;
-}
-
-.carousel__button img {
-  width: 24px;
-  height: 24px;
-}
-
-.carousel__nav {
-  /* background: pink; */
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
   
-}
 
-.carousel__indicator {
-  background: rgba(0, 0, 0, 0.3);
-  border: 0;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
-  margin: 0 12px;
-}
 
-.carousel__indicator.current-slide {
-  background: rgba(0,0,0,0.75);
-}
 
-.is-hidden {
-  display: none;
-}
+
 
 /* this can be used when the second panel of "Listen to Her Buzz" is added */
 /* .panels {
@@ -301,32 +178,4 @@ h1 {
     font-style: normal;
   }
 
-  @font-face {
-    font-family: 'space grotesk';
-    src: url('SpaceGrotesk-Regular.ttf') format('regular');
-    font-weight: 400;
-    font-style: normal;
-  }
 
-  @media (max-width: 768px) {
-    .navbar {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .side {
-        flex: 1 1 100%;
-    }
-
-    .main {
-        flex: 1 1 100%;
-    }
-
-    .gallery {
-        font-size: 3vw;
-    }
-
-    .artwork {
-        width: 90vw;
-    }
-}
