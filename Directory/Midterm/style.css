@@ -43,25 +43,30 @@ h1 {
   font-size: 50px;
   margin: 0;
 }
+
+.row {
+  display: flex;
+}
 /* The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 170px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0; 
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 80px;
+  flex: 25%;
   
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  padding: 16px 8px 16px 16px;
   text-decoration: none;
-  font-size: 2.5vw;
+  font-size: 2vw;
   display: block;
+  justify-content: space-around;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -74,18 +79,20 @@ h1 {
 
 .sidenav .Projects-container h3 {
   display: none; 
+  font-size: 1vw;
 }
 
 .sidenav .Projects-container:hover h3 {
   display: block;
-  margin-left: 2vw;
   cursor: pointer;
+  font-size: 1vw;
 }
 
 /* Style page content */
 .main {
-  margin-left: 150px; /* Same as the width of the sidebar */
-  padding: 4px 15px;
+  margin-left: 20vw; /* Same as the width of the sidebar */
+  padding: 10px 15px;
+  flex: 75%;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
@@ -95,74 +102,6 @@ h1 {
 }
 
 
-/* .row {
-    display: flex;
-    flex-wrap: nowrap;
-    color:blue;
-
-  }
-
-.side {
-    flex: 10%;
-    padding: 1vw;
-    flex-direction: column;
-  }
-
-  .main {
-    flex: 90%;
-    padding: 1vw;
-  }
-
- 
-
-.navbar {
-    display: flex;
-    flex-direction: column;
-    padding: 1vw;
-    margin-left: 2vw;
-    margin-right: 3vw;
-} */
-
-
-
-.welcome {
-  margin-top: 1.5vw;
-  background-color: blue;
-  color: white;
-  border-color: blue;
-  border-style: solid;
-  border-width:3cap;
-  border-radius: 5px 30px 30px 30px;
-}
-
-.welcome h2 {
-  font-size: 4vw;
-}
-
-.welcome h3 {
-  font-size: 2vw;
-}
-
-
-
-
-
-
-  
-
-
-
-
-
-/* this can be used when the second panel of "Listen to Her Buzz" is added */
-/* .panels {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  object-fit:cover;
-  gap: 1vw;
-  margin: 2vw;
-} */
 
 @font-face {
     font-family: 'space grotesk';

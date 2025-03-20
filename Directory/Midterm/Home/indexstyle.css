@@ -1,0 +1,18 @@
+.welcome {
+    margin-top: 1.5vw;
+    background-color: blue;
+    color: white;
+    border-color: blue;
+    border-style: solid;
+    border-width:3cap;
+    border-radius: 5px 30px 30px 30px;
+  }
+  
+  .welcome h2 {
+    font-size: 4vw;
+  }
+  
+  .welcome h3 {
+    font-size: 2vw;
+  }
+  
