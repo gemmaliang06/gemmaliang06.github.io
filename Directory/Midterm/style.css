@@ -40,8 +40,7 @@ h1 {
   padding: 2px;
   text-decoration: none;
   text-align: left;
-  font-size: 50px;
-  margin: 0;
+  font-size: 100px;
 }
 
 .row {
@@ -55,7 +54,7 @@ h1 {
   top: 0; /* Stay at the top */
   left: 0; 
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 80px;
+  padding-top: 170px;
   flex: 25%;
   
 }
@@ -67,6 +66,7 @@ h1 {
   font-size: 2vw;
   display: block;
   justify-content: space-around;
+  cursor: pointer;
 }
 
 /* When you mouse over the navigation links, change their color */
