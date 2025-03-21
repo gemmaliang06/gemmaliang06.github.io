@@ -6,6 +6,7 @@
     border-style: solid;
     border-width:3cap;
     border-radius: 5px 30px 30px 30px;
+    display:flex;
   }
   
   .welcome h2 {
@@ -16,3 +17,8 @@
     font-size: 2vw;
   }
   
+  .welcome img {
+    width: 100%; /* Make images fill their container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* or object-fit: contain; */
+  }
