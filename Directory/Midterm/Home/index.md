@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+```<!DOCTYPE html>
 <html>
     <head>
         <title>Gemma Liang</title>
@@ -10,16 +10,13 @@
 
     <body>
 
-        <div class="logo">
-            <img src="./../imgs/logo_1.png" class="logo_1>
-      
-            <img src="./../imgs/logo_2.png" class="logo_2">
-        </div>
+            <h1 id="logo"><G. Liang></h1>
 
 <div class="row">
 
         <!-- Side navigation -->
 <div class="sidenav">
+    <a href="index.html">Home</a>
     <a href="../Resume/Resume.html">Resume</a>
     <a href="../Contact/Contact.html">Contact</a>
     <div class="Projects-container">
@@ -48,6 +45,5 @@
     </div>
 
 </div>
-<script src="index.js"></script>
     </body>
-</html>
+</html>```
