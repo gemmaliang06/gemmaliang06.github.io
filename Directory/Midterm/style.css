@@ -127,7 +127,7 @@ html, body {
 
 /* Style page content */
 .main {
-  position: fixed;
+  
   width: 80vw;
   margin-left: 20em; /* Same as the width of the sidebar */
   margin-top: 5em;
