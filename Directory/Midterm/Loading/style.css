@@ -43,7 +43,7 @@ p2 {
 
 @font-face {
   font-family: 'melodrame';
-  src: url('./../Relationship\ of\ mélodrame.ttf') format('truetype');
+  src: url('./../melodrame.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
