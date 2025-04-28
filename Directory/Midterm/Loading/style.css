@@ -33,7 +33,7 @@ button {
 }
    
 p {
-  font-size: 8em;
+  font-size: 5em;
 }
 
 p2 {
@@ -42,8 +42,9 @@ p2 {
 
 
 @font-face {
-  font-family: 'melodrame';
-  src: url('./../melodrame.ttf') format('truetype');
-  font-weight: 400;
+  font-family: "melodrame";
+  src: url(./../Relationship\ of\ mélodrame.ttf) format('truetype');
+  font-weight: normal;
   font-style: normal;
+  font-size: large;
 }
