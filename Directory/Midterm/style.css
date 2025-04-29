@@ -113,8 +113,7 @@ title {
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   text-shadow: 5px 2px 5px rgb(101, 101, 255);
-  /* transform: scale(1.2);  */
-  border: 1vw solid rgb(0, 0, 0, 0); 
+  border: 1.5vw solid rgb(0, 0, 0, 0); 
   background-color: rgb(0, 0, 0, 0); 
 }
 
@@ -123,12 +122,17 @@ title {
   transition: width .5s, height .5s, transform .5s;
 }
 
+.sidenav .Projects-container .medium {
+  font-size: 25px;
+}
+
 
 .sidenav .Projects-container:hover p {
   display: block;
   font-size: 25px;
   margin-left: 50px;
 }
+
 
 /* Style page content */
 .main {
