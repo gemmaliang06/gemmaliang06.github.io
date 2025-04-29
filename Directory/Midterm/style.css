@@ -47,8 +47,8 @@ title {
   left: 0;
   padding: 1em;
   max-width: 8em;
-
 }
+
 
 /* Rotates the logo slightly counterclockwise to create a dynamic and visually appealing effect */
 .logo_1 {
@@ -61,24 +61,21 @@ title {
 .logo_2 {
   position: fixed;
   z-index: 1; 
+  transform: rotate(20deg);
 }
 
-/* .logo_1 {
-  transition: transform 0.3s ease-in ;
-
-} */
-
-.logo_1:hover {
-
-  animation: logoRotate 0.8s;
-}
 
 @keyframes logoRotate {
-   from {
-    transform: rotate(10deg);
-  } to {
-    transform: rotate(-10deg);
+  from {
+    transform: rotate(-20deg);
   }
+  to {
+    transform: rotate(340deg);
+  }
+}
+
+.logo_1:hover {
+  animation: logoRotate 1.5s infinite linear;
 }
 
 

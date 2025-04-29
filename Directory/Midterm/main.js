@@ -24,3 +24,11 @@ document.querySelectorAll("a").forEach((anchor) => {
     }
   });
 });
+
+document.querySelector('.logo_1').addEventListener('mouseover', () => {
+  document.querySelector('.logo_2').style.animation = 'logoRotate 0.8s';
+});
+
+document.querySelector('.logo_1').addEventListener('mouseout', () => {
+  document.querySelector('.logo_2').style.animation = '';
+});
