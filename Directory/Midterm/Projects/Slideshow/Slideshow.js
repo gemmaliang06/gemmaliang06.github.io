@@ -32,4 +32,28 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+
+  let typewriterSpan = slides[slideIndex - 1].querySelector(".typewriter");
+if (typewriterSpan) {
+  let originalText = typewriterSpan.getAttribute("data-original");
+  if (!originalText) {
+    originalText = typewriterSpan.textContent;
+    typewriterSpan.setAttribute("data-original", originalText);
+  }
+  typewriterEffect(typewriterSpan, originalText);
+}
+
+}
+
+function typewriterEffect(el, text, speed = 50) {
+  el.innerHTML = "";
+  let i = 0;
+  function type() {
+    if (i < text.length) {
+      el.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    }
+  }
+  type();
 }

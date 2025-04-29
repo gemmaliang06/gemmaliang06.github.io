@@ -10,6 +10,7 @@
 /* Hide the images by default */
 .mySlides {
   display: none;
+  /* position: relative; Needed for .text to position absolutely within it */
 }
 
 .mySlides img {
@@ -19,7 +20,6 @@
   display: block;
   margin: 0 auto;
 }
-
 
 
 /* Next & previous buttons */
@@ -51,11 +51,12 @@
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: #000000;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: 100%;            /* Move above the image */
+  margin-bottom: 15px;     /* 15px space above */
   width: 100%;
   text-align: center;
 }
