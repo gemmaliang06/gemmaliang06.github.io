@@ -8,8 +8,9 @@ script {
   box-sizing: border-box;
 }
 
-html {
+html * {
     display: block;
+    cursor: none !important;
 }
 
 head {
@@ -24,6 +25,10 @@ html, body {
   text-decoration: none;
   background-color: rgb(233, 245, 255);
   }
+
+title {
+  display: none;
+}
   
   body {
     margin: 0;
@@ -41,8 +46,8 @@ html, body {
   top: 0;
   left: 0;
   padding: 1em;
-  max-width: 15em;
-  cursor: pointer;
+  max-width: 8em;
+
 }
 
 /* Rotates the logo slightly counterclockwise to create a dynamic and visually appealing effect */
@@ -58,20 +63,21 @@ html, body {
   z-index: 1; 
 }
 
-.logo_1 img {
+/* .logo_1 {
   transition: transform 0.3s ease-in ;
-}
 
-.logo_1 img:hover {
-  animation: logoRotate 0.4s;
-  cursor: pointer;
+} */
+
+.logo_1:hover {
+
+  animation: logoRotate 0.8s;
 }
 
 @keyframes logoRotate {
-  from {
-    transform: rotate(0)
+   from {
+    transform: rotate(10deg);
   } to {
-    transform: rotate(10deg)
+    transform: rotate(-10deg);
   }
 }
 
@@ -88,7 +94,7 @@ html, body {
   top: 0; /* Stay at the top */
   left: 0; 
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 160px;
+  padding-top: 140px;
   flex: 25%;
   
 }
@@ -110,7 +116,6 @@ html, body {
   /* transform: scale(1.2);  */
   border: 1vw solid rgb(0, 0, 0, 0); 
   background-color: rgb(0, 0, 0, 0); 
-  cursor: pointer;
 }
 
 .sidenav .Projects-container p {
@@ -121,8 +126,8 @@ html, body {
 
 .sidenav .Projects-container:hover p {
   display: block;
-  cursor: pointer;
-  transform: scale(0.7);
+  font-size: 25px;
+  margin-left: 50px;
 }
 
 /* Style page content */
@@ -160,4 +165,14 @@ html, body {
   font-weight: normal;
   font-style: normal;
   font-size: large;
+}
+
+#circle-cursor {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  pointer-events: none; /* Ensures the circle doesn't interfere with clicks */
+  z-index: 9999; /* Ensures the circle appears above other elements */
 }

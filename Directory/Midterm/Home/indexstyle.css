@@ -27,25 +27,30 @@
 
   .line-1 {
     font-size: 70px;
-    animation: fadeInUp 1.9s ease-out forwards 0.5s; /* Add delay as the last parameter */
+    animation: fadeInUp 1.9s ease-out forwards 0.2s; /* Add delay as the last parameter */
   }
 
   .line-2 {
     font-size: 30px;
-    animation: fadeInUp 2.4s ease-out forwards 1s; /* Add delay of 0.5s */
+    animation: fadeInUp 2.4s ease-out forwards 1.7s; /* Add delay of 0.5s */
   }
 
   .line-3 {
-    animation: fadeInUp 2.9s ease-out forwards 2s; /* Add delay of 1s */
+    animation: fadeInUp 2.9s ease-out forwards 3.7s; /* Add delay of 1s */
     font-size: 30px;
   }
 
   .line-4 {
-    animation: fadeInUp 3.4s ease-out forwards 3s; /* Add delay of 1.5s */
+    animation: fadeInUp 3.4s ease-out forwards 5.7s; /* Add delay of 1.5s */
     font-size: 30px;
   }
 
-  .line-1, .line-2, .line-3, .line-4 {
+  .line-5 {
+    animation: fadeInUp 4.5s ease-out forwards 7.7s; /* Add delay of 1.5s */
+    font-size: 30px;
+  }
+
+  .line-1, .line-2, .line-3, .line-4, .line-5 {
     font-family: 'Moderniz';
     position: relative; /* Important for animation */
     margin-bottom: 30px;
