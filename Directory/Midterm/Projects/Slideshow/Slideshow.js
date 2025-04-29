@@ -1,5 +1,11 @@
-let slideIndex = 1;
+function getQueryParam(param) {
+  let urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
+let slideIndex = parseInt(getQueryParam('img')) || 1;
 showSlides(slideIndex);
+
 
 // Next/previous controls
 function plusSlides(n) {
