@@ -115,9 +115,11 @@ title {
   justify-content: space-around;
   transition: transform .5s;
   pointer-events: none;
+  line-height: 1.2; 
+  height: auto;
+  
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   text-shadow: 5px 2px 5px rgb(101, 101, 255);
   border: 1.5vw solid rgb(0, 0, 0, 0); 
@@ -143,8 +145,11 @@ title {
 
 .sidenav a span {
   color: blue;
-  pointer-events: auto; /* enables hover */
+  pointer-events: auto; 
   transition: text-shadow 0.3s;
+  display: inline-block;
+  white-space: nowrap; 
+  line-height: 1;
 }
 
 .sidenav a span:hover {
@@ -152,16 +157,15 @@ title {
   cursor: pointer;
 }
 
-/* Prevent visited link color change */
+
 .sidenav a:visited span {
   color: blue;
 }
 
-/* Style page content */
+
 .main {
-  
   width: 80vw;
-  margin-left: 20em; /* Same as the width of the sidebar */
+  margin-left: 20em; 
   margin-top: 5em;
   margin-right: 2vw;
   padding: 10px 15px;
