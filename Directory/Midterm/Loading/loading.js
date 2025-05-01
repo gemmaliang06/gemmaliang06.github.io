@@ -13,7 +13,7 @@ function typeWriter() {
   } else if (i = txt.length) {
     
     setTimeout(function() {
-      window.location.href = "http://127.0.0.1:3002/Directory/Midterm/Home/index.html";
+      window.location.href = "http://127.0.0.1:3000/Directory/Midterm/Home/index.html";
     }, 1500);
   }
 }
