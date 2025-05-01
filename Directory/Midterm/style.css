@@ -140,6 +140,24 @@ title {
 }
 
 
+.sidenav a span {
+  display: inline-block;
+  padding: 0.2em 0; /* optional: adds a bit of breathing room around the text */
+  transition: text-shadow 0.3s;
+  color: blue; /* base color */
+}
+
+.sidenav a span:hover {
+  text-shadow: 5px 2px 5px rgb(101, 101, 255);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.sidenav a:visited span {
+  color: blue; /* keeps visited links the same color */
+}
+
 /* Style page content */
 .main {
   
